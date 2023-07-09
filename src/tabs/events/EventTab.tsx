@@ -7,8 +7,7 @@ export const EventTab = () => {
   const [maxEvents, setMaxEvents] = React.useState<number>(4)
   const { data, isLoading, isError } = useEvents()
 
-  const slicedData = useMemo(() => data.slice(0, maxEvents), [])
-  console.log('slicedData', slicedData)
+  const slicedData = useMemo(() => data.slice(0, maxEvents), [maxEvents, data])
 
   if (isLoading) {
     return <p className="p-5">Відбувається завантаження...</p>
