@@ -1,4 +1,5 @@
 {
+  "homepage": "https://VingeB0.github.io/wua_task",
   "name": "wua_task",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +18,7 @@
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "eslint-config-prettier": "8.8.0",
+    "gh-pages": "5.0.0",
     "postcss": "8.4.25",
     "prettier": "3.0.0",
     "react-scripts": "5.0.1",
@@ -32,7 +34,9 @@
     "lint": "eslint src/**/*.{ts,tsx}",
     "lint:fix": "eslint --fix src/**/*.{ts,tsx}",
     "fmt": "prettier --check \"src/**/*.{ts,tsx,json}\" \"public/*.{html,json}\"",
-    "fmt:fix": "prettier --write \"src/**/*.{ts,tsx,json}\" \"public/*.{html,json}\""
+    "fmt:fix": "prettier --write \"src/**/*.{ts,tsx,json}\" \"public/*.{html,json}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

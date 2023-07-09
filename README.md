@@ -1,4 +1,5 @@
-# stack requirements: react, typescript, react-query, tailwind css.
+## stack requirements: react, typescript, react-query, tailwind css.
+## [link](https://vingeb0.github.io/wua_task/)
 
 # Getting Started with Create React App
 
