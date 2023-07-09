@@ -1,2 +1,2 @@
-export * from './useEvents'
-export * from './useEventsCache'
+export * from "./useEvents";
+export * from "./useEventsCache";
