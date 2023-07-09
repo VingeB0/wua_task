@@ -27,8 +27,12 @@ module.exports = {
             maxWidth: {
                 '732': '45.75rem', //max width app
             },
+            minWidth: {
+                '270': '16.875rem', //min width popup
+            },
             fontSize: {
                 '19': '1.1875rem',
+                '15': '0.9375rem',
                 '17': '1.0625rem',
                 '12': '0.75rem',
             },
@@ -38,11 +42,15 @@ module.exports = {
                 'white': '#FFF',
                 'gray': '#E9EBED',
                 'darkGray': '#ABB2BA',
+                'darkestGray': '#6B7886',
                 'grayGradientStart': '#D9D9D9',
                 'grayGradientEnd': 'rgba(217, 217, 217, 0.00)',
             },
             borderRadius: {
                 '5': '0.3rem'
+            },
+            boxShadow: {
+                'popup': '0px 0px 20px 0px rgba(0, 0, 0, 0.25)',
             }
         },
     },

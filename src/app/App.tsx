@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {TabItem, EventTab, PassingTab, ResumeTab} from "../tabs";
 
-enum TABS {
+export enum TABS {
     RESUME = 'resume',
     EVENT = 'event',
     PASSING = 'passing',
@@ -23,9 +23,19 @@ function App() {
     return (
         <div className="max-w-732 w-full mb-auto">
             <ul className="flex text-17 bg-transparent">
-                {tabs.map(({text, tab}, index) => <TabItem onClick={() => handleTabClick(tab)} active={activeTab === tab} key={index} text={text}/>)}
+                {tabs.map(({text, tab}, index) => {
+                    return (
+                        <TabItem
+                            onClick={() => handleTabClick(tab)}
+                            active={activeTab === tab}
+                            key={tab}
+                            tab={tab}
+                            text={text}
+                        />
+                    )
+                })}
             </ul>
-            <div className="bg-white">
+            <div className=" bg-white">
                 {activeTab === TABS.PASSING && <PassingTab/>}
                 {activeTab === TABS.EVENT && <EventTab/>}
                 {activeTab === TABS.RESUME && <ResumeTab/>}
