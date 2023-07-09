@@ -1,1 +1,1 @@
-export * from "./ResumeTab";
+export * from './ResumeTab'

@@ -1,1 +1,1 @@
-export * from "./PassingTab";
+export * from './PassingTab'

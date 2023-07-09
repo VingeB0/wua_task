@@ -1,10 +1,10 @@
-import React from "react";
-import { ReactQueryProvider } from "./reactQuery/ReactQueryProvider";
+import React from 'react'
+import { ReactQueryProvider } from './reactQuery/ReactQueryProvider'
 
 type ProvidersProps = {
-  children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
 export const Providers = ({ children }: ProvidersProps) => {
-  return <ReactQueryProvider>{children}</ReactQueryProvider>;
-};
+  return <ReactQueryProvider>{children}</ReactQueryProvider>
+}
