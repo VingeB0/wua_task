@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import usePopup from '../hooks/Popup'
+import { usePopup } from '../hooks'
 import EventFilter, { ACTION_FILTERS, actionFilterToText } from './EventFilter'
 import { TABS } from '../app/App'
 import { ChervonDown } from '../assets/icons'

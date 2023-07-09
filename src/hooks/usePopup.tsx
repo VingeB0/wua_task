@@ -40,7 +40,7 @@ type PopupProps = {
   content: React.ReactNode
 }
 
-const usePopup = () => {
+export const usePopup = () => {
   const { open, openPopup, closePopup, popupRef } = useInnerPopup()
 
   const Popup = ({ children, content }: PopupProps) => (
@@ -61,5 +61,3 @@ const usePopup = () => {
     Popup,
   }
 }
-
-export default usePopup
